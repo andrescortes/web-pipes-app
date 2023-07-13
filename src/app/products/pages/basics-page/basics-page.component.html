@@ -1,1 +1,84 @@
-<p>basics-page works!</p>
+<p-panel header="Basics Pipes" class="p-1">
+  <p>
+    Pipes included in Angular - Usually used in Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 sm:col-4 ">
+    <p-card header="uppercase">
+      {{nameLowerCase | uppercase}}
+    </p-card>
+  </div>
+  <div class="col-12 sm:col-4 ">
+    <p-card header="lowercase">
+      {{nameUpperCase | lowercase}}
+    </p-card>
+  </div>
+  <div class="col-12 sm:col-4">
+    <p-card header="titlecase">
+      {{nameTitleCase | titlecase}}
+    </p-card>
+  </div>
+  <div class="col-12 sm:col-6">
+    <p-card header="Date">
+      <ol>
+        <li> Date</li>
+        <li> Date | date</li>
+        <li> Date | date:'short'</li>
+        <li> Date | date:'long'</li>
+        <li> Date | date:'MMMM'</li>
+        <li> Date | date:'MMMM dd, yyyy'</li>
+      </ol>
+
+      <hr>
+      <ol>
+        <li> Date | date:'long':'GMT-6'</li>
+        <li> Date | date:'long':'GMT-4'</li>
+        <li> Date | date:'long':'GMT-4':'es-HN'</li>
+        <li> Date | date:'long':'GMT-4':'fr-CA'</li>
+        <li> Date | date:'long':'GMT-4':'en-US'</li>
+      </ol>
+
+      <hr>
+      <ol>
+        <li> Date | date:'shortDate'</li>
+        <li> Date | date:'shortTime'</li>
+        <li> Date | date:'mediumDate'</li>
+        <li> Date | date:'mediumTime'</li>
+        <li> Date | date:'longDate'</li>
+        <li> Date | date:'longTime'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 sm:col-6">
+    <p-card header="Date with Pipes">
+      <ol>
+        <li>{{customDate}}</li>
+        <li>{{customDate | date}}</li>
+        <li>{{customDate | date:'short'}}</li>
+        <li>{{customDate | date:'long'}}</li>
+        <li>{{customDate | date:'MMMM'}}</li>
+        <li>{{customDate | date:'MMMM dd, yyyy'}}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li> {{customDate | date:'long':'GMT-6'}}</li>
+        <li> {{customDate | date:'long':'GMT-4'}}</li>
+        <li> {{customDate | date:'long':'GMT-4':'es-HN'}}</li>
+        <li> {{customDate | date:'long':'GMT-4':'fr-CA'}}</li>
+        <li> {{customDate | date:'long':'GMT-4':'en-US'}}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{customDate | date:'shortDate'}}</li>
+        <li>{{customDate | date:'shortTime'}}</li>
+        <li>{{customDate | date:'mediumDate'}}</li>
+        <li>{{customDate | date:'mediumTime'}}</li>
+        <li>{{customDate | date:'longDate'}}</li>
+        <li>{{customDate | date:'longTime'}}</li>
+      </ol>
+    </p-card>
+  </div>
+
+</div>

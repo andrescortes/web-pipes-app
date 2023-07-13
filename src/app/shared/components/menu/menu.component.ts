@@ -17,28 +17,28 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-desktop',
         items: [
           {
-            label: 'Textos y Fechas',
+            label: 'Dates and Texts',
             icon: 'pi pi-align-left',
-
+            routerLink: '/'
           },
           {
-            label: 'Números',
+            label: 'Numbers',
             icon: 'pi pi-dollar',
-
+            routerLink: 'numbers'
           },
           {
-            label: 'No Comunes',
+            label: 'No Common',
             icon: 'pi pi-globe',
-
+            routerLink: 'uncommon',
           }
         ]
       },
       {
-        label: 'Pipes Personalizados',
+        label: 'Custom Pipes',
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Cotización',
+            label: 'Capitalize',
             icon: 'pi pi-dollar',
 
           }
